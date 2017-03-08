@@ -54,6 +54,37 @@ header {
   }
 }
 
+section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  padding: 30px;
+}
+
+.price {
+  flex: 4;
+  margin: auto;
+}
+
+.info {
+  flex: 0 40%;
+  margin: 12px 35px 0px 35px;
+
+  h4  {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 4px;
+    margin: 18px 0px;
+  }
+  p {
+    color: rgb(95, 96, 96);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
 
 footer {
   padding: 20px;

@@ -33,7 +33,6 @@ nav {
       display: inline;
       padding: 5px 30px 10px 5px;
     }
-
   }
 }
 
@@ -63,7 +62,48 @@ section {
 
 .price {
   flex: 4;
-  margin: auto;
+  margin: 20px;
+  text-align: center;
+
+  .deal{
+    color: white;
+    padding: 20px;
+  }
+
+  div#deal0 {
+    background-color: rgb(98, 149, 80);
+  }
+  div#deal1 {
+    background-color: rgba(35, 55, 111, 0.95);
+  }
+  div#deal2 {
+    background-color: black;
+  }
+  h3 {
+    margin: 5px;
+  }
+  h2 {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 400;
+  }
+  h5 {
+    margin: 5px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0px;
+  }
+  li {
+
+  }
+  .button {
+
+  }
+  button {
+
+  }
 }
 
 .info {

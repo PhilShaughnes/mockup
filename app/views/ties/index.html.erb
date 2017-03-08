@@ -6,16 +6,21 @@
 <main>
 
   <section>
-    <% @prices.each do |p| %>
+    <% @prices.each.with_index do |p, i| %>
       <div class="price">
-        <h3><%= p[:name] %></h3>
-        <h2>$<%= p[:cost] %></h2>
-        <h5>PER MONTH</h5>
+        <div class = deal id=<%= "deal#{i}" %>>
+          <h3><%= p[:name] %></h3>
+          <h2>$<%= p[:cost] %></h2>
+          <h5>PER MONTH</h5>
+        </div>
         <ul>
-          <%p[:stats].each do |i|%>
-            <li><%= i.capitalize %></li>
+          <%p[:stats].each do |stat|%>
+            <li><%= stat.capitalize %></li>
           <% end %>
         </ul>
+        <div class="button">
+          <button type="button" name="choose">Choose</button>
+        </div>
       </div>
     <% end %>
   </section>

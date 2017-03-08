@@ -53,6 +53,10 @@ header {
   }
 }
 
+main {
+  padding: 0px 60px;
+}
+
 section {
   display: flex;
   flex-flow: row wrap;
@@ -62,7 +66,7 @@ section {
 
 .price {
   flex: 4;
-  margin: 20px;
+  margin: 20px 8px;
   text-align: center;
 
   .deal{

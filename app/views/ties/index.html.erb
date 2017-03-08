@@ -1,36 +1,33 @@
 <header>
-  <h1>Simple Pricing</h1>
+  <h1>Simple Pricing.</h1>
   <h1>Try before you buy.</h1>
 </header>
 
 <main>
 
   <section>
-    <div class="price">
-      $5
-    </div>
-    <div class="price">
-      $25
-    </div>
-    <div class="price">
-      $45
-    </div>
+    <% @prices.each do |p| %>
+      <div class="price">
+        <h3><%= p[:name] %></h3>
+        <h2>$<%= p[:cost] %></h2>
+        <h5>PER MONTH</h5>
+        <ul>
+          <%p[:stats].each do |i|%>
+            <li><%= i.capitalize %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
   </section>
 
-
-
   <section>
-    <article>
-      get started today
-    </article>
-    <article>
-      24/7 customer support
-    </article>
-    <article>
-      pay monthly or annually
-    </article>
-    <article>
-      cancel your plan anytime
-    </article>
+    <% @info.each do |i| %>
+      <article>
+        <h4><%= i[:header] %></h4>
+        <p>
+          <%= i[:body] %>
+        </p>
+      </article>
+    <% end %>
   </section>
 </main>
